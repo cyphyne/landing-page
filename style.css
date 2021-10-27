@@ -1,0 +1,34 @@
+body {
+    background-image: linear-gradient(#051b33 25%,#02050a 75%);
+    
+}
+
+.playlist {
+    border-radius: 5px;
+}
+.text{
+  color: #f2f4f7;
+}
+.button {
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #0a0f17;
+    border-color: #0d192b;
+    color:#6d7a8c;
+}
+ul {
+    color: #c7ccd4;
+    list-style: none;
+}
+
+.quote {
+    color: #f2f4f7;
+}
+
+.bottom {
+    color:#c7ccd4;
+}
+
+.footer {
+    color:#323740;
+}
