@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(#051b33 25%,#02050a 75%);
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .playlist {
@@ -8,27 +8,65 @@ body {
 }
 .text{
   color: #f2f4f7;
+  font-size: 18px;
 }
+
+.large {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    font-size: 48px;
+}
+
+.mid {
+    font-family: 'Montserrat', sans-serif;
+    color:#f2f4f7;
+    font-size: 24px;
+}
+
 .button {
-    border-radius: 12px;
+    border-radius: 25px;
     padding: 8px;
-    background-color: #0a0f17;
-    border-color: #0d192b;
-    color:#6d7a8c;
+    font-size: 13px;
+    font-weight:bold;
+    background-color:transparent;
+    border: 2px solid #c7ccd4;
+    color:#c7ccd4;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
 }
+
+.button:hover {
+color: #f2f4f7;
+background-color:#20252e80;
+transform: scale(1.05) perspective(1px);
+
+
+}
+
 ul {
     color: #c7ccd4;
     list-style: none;
+    font-size: 18px;
 }
 
 .quote {
     color: #f2f4f7;
+    font-size: 26px;
 }
 
 .bottom {
     color:#c7ccd4;
 }
 
+.header {
+    color: #c7ccd4;
+}
+
 .footer {
     color:#323740;
+    font-size: 12px;
 }
