@@ -3,8 +3,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.fas {
+    color:white;
+    margin:auto 6px auto 10px;
+}
+
+
+
 .playlist {
     border-radius: 5px;
+    margin: auto 10px;
 }
 .text{
   color: #f2f4f7;
@@ -13,8 +21,9 @@ body {
 
 .large {
     font-family: 'Montserrat', sans-serif;
-    font-weight:bolder;
+    font-weight:950;
     font-size: 48px;
+   
 }
 
 .mid {
@@ -56,6 +65,10 @@ ul {
 .quote {
     color: #f2f4f7;
     font-size: 26px;
+}
+
+.name {
+    color:#f2f4f7;
 }
 
 .bottom {
