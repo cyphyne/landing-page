@@ -1,9 +1,7 @@
 body {
     background-image: linear-gradient(#051b33 25%,#02050a 75%);
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
-    height: 100;
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,129 +9,141 @@ body {
     overflow-x: hidden;
 }
 
+.text{
+    color: #f2f4f7;
+    font-size: 18px;
+  }
+
+ul {
+    color: #c7ccd4;
+    list-style: none;
+    font-size: 18px;
+    display:flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar Sect*/
 .header {
     color: #c7ccd4;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
+    background: black;
 }
 
 .left-icon, .right-icon {
-    padding: 10px;
+    margin: 10px;
     background:rgb(2, 1, 3);
-    width: 100%;
-    
-    
-    
+    display: flex;
+    flex-direction: row;
 }
 
 .right-icon {
-
-margin-right: 15px;
-
+display: flex;
+justify-content: flex-end;
 }
 
+.fas {
+    color:white;
+   margin: 10px;
+}
+
+/*Hero Sect*/
 .hero {
-    height: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display:flex; 
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-image:linear-gradient(#20536b71 25%, #000208 75% );
-    flex: 1;
+    background-image:linear-gradient(#03080edc 25%, #000208 75% );
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 85px;
+    margin:25px;
+    gap: 35px;
+
 }
 
 .hinfo {
     display:flex; 
-    align-self: flex-start;
-    margin-left: 45px;
-    text-align: start;
-    font-weight: 900;
-    
+    font-weight: 550;
+    font-size: 20px;
+    opacity: 0.85;
 }
 
 .large {
     display: flex;
-    align-self: flex-start;
-    margin-left: 45px;
-    margin-top: 55px;
-    text-align: start ;
+    text-align: start;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    font-size: 48px;
+}
+
+#topbtn {
+    display: flex;
+    flex-grow: 0;
+    margin-top:
 }
 
 .image {
     display: flex;
     align-self: flex-end;
+    padding: 0;
     margin: 0;
-}
-
-.top-btn {
-    display: flex;
-   align-self: flex-start;
-   margin-left: 45px;
-   padding: 35px;
-   
-}
-
-.fas {
-    color:white;
-    margin:auto 6px auto 10px;
+    justify-content:flex-end;
+    width: auto;
 }
 
 
-.playlist {
-    border-radius: 5px;
-    margin: auto 30px;
-    margin-left: 100px;
-    justify-content: space-around;
-    align-items: center;
-    flex-shrink: 0;
-
-}
-
-.text{
-  color: #f2f4f7;
-  font-size: 18px;
-}
-
-.large {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:950;
-    font-size: 48px;
-   
-}
-
-
-
+/*Main Sect*/
 .mid {
     font-family: 'Montserrat', sans-serif;
     color:#f2f4f7;
     font-size: 24px;
     display: flex;
     align-items: center;
-    margin-left: 835px;
+    justify-content: center;
     margin-bottom: 45px;
     margin-top: 45px;
 }
 
+.playlist {
+    border-radius: 5px;  
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
 .content-info {
-display: flex;
-justify-content:space-between;
-align-items: center;
-margin-top: 30px;
-margin-bottom: 20px;
-margin-left: 155px;
-
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .info {
     display: flex;
-    flex-direction: row;
-    gap: 355px;
-    align-items: center;
+    text-align: center;
+    gap: 300px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
+
+/*Bottom Sect*/
 
 button {
     border-radius: 25px;
@@ -148,25 +158,12 @@ button {
     padding-right: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
-    
 }
 
 button:hover {
 color: #f2f4f7;
 background-color:#20252e80;
 transform: scale(1.05) perspective(1px);
-
-
-}
-
-ul {
-    color: #c7ccd4;
-    list-style: none;
-    font-size: 18px;
-    display:flex;
-    padding: 0;
-    margin: 0;
-   
 }
 
 .bot-sect {
@@ -199,25 +196,31 @@ ul {
     
 }
 
+/*Call To Action Sect*/
+
 .cta-bg {
     background-image: linear-gradient(black, rgb(5, 10, 15));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-bottom: 50px;
     padding: 30px;
     background-image:linear-gradient(rgb(31, 46, 56), rgb(9, 15, 26));
     border-radius:15px ;
     opacity: 0.95;
     width: 35%;
-    margin-left: 600px;
 }
 
+
+/*Footer Sect*/
 .footer {
     color:#3c424e;
     font-size: 12px;
